@@ -34,8 +34,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         search.text = ""
         search.prompt = "カテゴリ検索"
         
-        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(dismissKeyboard))
-        self.view.addGestureRecognizer(tapGesture)
+//        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(dismissKeyboard))
+//        self.view.addGestureRecognizer(tapGesture)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
