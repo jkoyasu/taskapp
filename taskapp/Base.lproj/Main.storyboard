@@ -92,7 +92,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-zx-6sD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-zx-6sD">
                                 <rect key="frame" x="10" y="98" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -104,46 +104,54 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EcC-ue-TeR">
-                                <rect key="frame" x="10" y="173" width="394" height="120"/>
+                                <rect key="frame" x="10" y="204" width="394" height="120"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="vmV-wU-aMV"/>
+                                    <constraint firstAttribute="height" constant="120" id="zHH-6Y-uu2"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="fvr-li-Gid">
-                                <rect key="frame" x="0.0" y="303" width="414" height="120"/>
+                                <rect key="frame" x="0.0" y="334" width="414" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="8wu-7U-S3L"/>
+                                    <constraint firstAttribute="height" constant="120" id="6sp-bl-hg0"/>
                                 </constraints>
                             </datePicker>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="カテゴリー" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a3N-s1-NsO">
-                                <rect key="frame" x="10" y="433" width="394" height="34"/>
+                                <rect key="frame" x="10" y="464" width="394" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAI-w1-UZ2">
+                                <rect key="frame" x="10" y="173" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kgS-ia-Ufp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fvr-li-Gid" firstAttribute="trailing" secondItem="kgS-ia-Ufp" secondAttribute="trailing" id="05f-2u-wbV"/>
                             <constraint firstItem="g0L-f6-yMN" firstAttribute="top" secondItem="kSd-zx-6sD" secondAttribute="bottom" constant="10" id="6tb-jg-z3G"/>
-                            <constraint firstItem="fvr-li-Gid" firstAttribute="top" secondItem="EcC-ue-TeR" secondAttribute="bottom" constant="10" id="AUK-v5-bhv"/>
+                            <constraint firstItem="EcC-ue-TeR" firstAttribute="leading" secondItem="kgS-ia-Ufp" secondAttribute="leading" constant="10" id="8XO-hj-x2Z"/>
+                            <constraint firstItem="kgS-ia-Ufp" firstAttribute="trailing" secondItem="fvr-li-Gid" secondAttribute="trailing" id="9I8-ue-uE3"/>
                             <constraint firstItem="kgS-ia-Ufp" firstAttribute="trailing" secondItem="a3N-s1-NsO" secondAttribute="trailing" constant="10" id="Bse-co-Kwb"/>
-                            <constraint firstItem="a3N-s1-NsO" firstAttribute="leading" secondItem="kgS-ia-Ufp" secondAttribute="leading" constant="10" id="IN3-59-C6U"/>
                             <constraint firstItem="kSd-zx-6sD" firstAttribute="leading" secondItem="kgS-ia-Ufp" secondAttribute="leading" constant="10" id="IXb-tl-GRM"/>
-                            <constraint firstItem="kgS-ia-Ufp" firstAttribute="trailing" secondItem="EcC-ue-TeR" secondAttribute="trailing" constant="10" id="Pkr-uk-qiM"/>
-                            <constraint firstItem="fvr-li-Gid" firstAttribute="leading" secondItem="kgS-ia-Ufp" secondAttribute="leading" id="QL9-I0-Q3l"/>
-                            <constraint firstItem="a3N-s1-NsO" firstAttribute="top" secondItem="fvr-li-Gid" secondAttribute="bottom" constant="10" id="YiH-Hd-dg1"/>
+                            <constraint firstItem="EcC-ue-TeR" firstAttribute="top" secondItem="AAI-w1-UZ2" secondAttribute="bottom" constant="10" id="RSE-Js-whP"/>
+                            <constraint firstItem="a3N-s1-NsO" firstAttribute="top" secondItem="fvr-li-Gid" secondAttribute="bottom" constant="10" id="RbX-py-CXa"/>
+                            <constraint firstItem="AAI-w1-UZ2" firstAttribute="leading" secondItem="kgS-ia-Ufp" secondAttribute="leading" constant="10" id="VTg-OR-Lfu"/>
+                            <constraint firstItem="kgS-ia-Ufp" firstAttribute="trailing" secondItem="AAI-w1-UZ2" secondAttribute="trailing" constant="10" id="X6W-mt-I8S"/>
                             <constraint firstItem="kgS-ia-Ufp" firstAttribute="trailing" secondItem="kSd-zx-6sD" secondAttribute="trailing" constant="10" id="aXp-jK-OSH"/>
-                            <constraint firstItem="EcC-ue-TeR" firstAttribute="top" secondItem="g0L-f6-yMN" secondAttribute="bottom" constant="10" id="ba5-7k-z5i"/>
+                            <constraint firstItem="AAI-w1-UZ2" firstAttribute="top" secondItem="g0L-f6-yMN" secondAttribute="bottom" constant="10" id="chj-DL-42z"/>
                             <constraint firstItem="kgS-ia-Ufp" firstAttribute="trailing" secondItem="g0L-f6-yMN" secondAttribute="trailing" constant="10" id="clj-7z-8Fe"/>
                             <constraint firstItem="g0L-f6-yMN" firstAttribute="leading" secondItem="kgS-ia-Ufp" secondAttribute="leading" constant="10" id="fjE-hb-yew"/>
+                            <constraint firstItem="fvr-li-Gid" firstAttribute="top" secondItem="EcC-ue-TeR" secondAttribute="bottom" constant="10" id="hlj-t4-LQU"/>
+                            <constraint firstItem="fvr-li-Gid" firstAttribute="leading" secondItem="kgS-ia-Ufp" secondAttribute="leading" id="jct-lR-9Xg"/>
+                            <constraint firstItem="a3N-s1-NsO" firstAttribute="leading" secondItem="kgS-ia-Ufp" secondAttribute="leading" constant="10" id="k0y-N4-KZr"/>
                             <constraint firstItem="kSd-zx-6sD" firstAttribute="top" secondItem="kgS-ia-Ufp" secondAttribute="top" constant="10" id="uZK-fd-wAY"/>
-                            <constraint firstItem="EcC-ue-TeR" firstAttribute="leading" secondItem="kgS-ia-Ufp" secondAttribute="leading" constant="10" id="zJw-oL-syE"/>
+                            <constraint firstItem="kgS-ia-Ufp" firstAttribute="trailing" secondItem="EcC-ue-TeR" secondAttribute="trailing" constant="10" id="ux8-5l-zpa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uWr-ud-Ho4"/>
