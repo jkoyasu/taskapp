@@ -44,7 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // 入力された値がnilでなければif文のブロック内の処理を実行
         if let word = searchBar.text {
             if searchBar.text != "" {
-                taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: true).filter("category == '\(word.lowercased())'")
+                taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: true).filter("category == '\(word)'")
             }else{
                 taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: true)
             }
